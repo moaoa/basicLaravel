@@ -1,0 +1,70 @@
+GET http://localhost:8000/api/data
+Authorization: Bearer 1|n8ySp7aDz4YGwjF4omRe6c8Ul4xFETWgua9lKlzo
+
+###
+
+
+GET http://localhost:8000/api/list
+Content-Type: application/json
+Authorization: Bearer 1|n8ySp7aDz4YGwjF4omRe6c8Ul4xFETWgua9lKlzo
+
+
+
+
+
+###
+
+POST http://localhost:8000/api/add
+Content-Type: application/json
+
+{
+    "name": "moaad2", 
+    "email": "moaad2@gamile.com",
+    "address": "libya"
+}
+
+###
+
+PUT http://localhost:8000/api/edit
+Content-Type: application/json
+
+{
+    "id": 1,
+    "email": "moaad@gamil.com",
+    "name": "updated moaad",
+    "address": "libya UPDATED"
+}
+
+###
+DELETE http://localhost:8000/api/destroy
+Content-Type: application/json
+
+{
+    "id": 7
+}
+
+###
+
+GET http://localhost:8000/api/search/moaad
+
+
+
+###
+
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "john@doe.com",
+    "password": "password"
+}
+###
+
+POST http://localhost:8000/api/validate
+Content-Type: application/json
+
+{
+    "email": "test",
+    "password": 1234
+}
+
